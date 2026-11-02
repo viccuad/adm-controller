@@ -308,7 +308,7 @@ preDeleteJob:
     # The registry is defined in the global.cattle.systemDefaultRegistry value
     # kuberlr-kubectl image to be used in the pre-delete helm hook.
     repository: "rancher/kuberlr-kubectl"
-    tag: v8.1.2
+    tag: v9.0.1
 podAnnotations: {}
 nodeSelector: {}
 # additionalEnvironmentVariables is a list of additional environment variables
@@ -581,7 +581,7 @@ recommendedPolicies:
   allowPrivilegeEscalationPolicy:
     module:
       repository: "kubewarden/policies/allow-privilege-escalation-psp"
-      tag: v1.0.14
+      tag: v1.0.15
     name: "no-privilege-escalation"
     settings:
       allowPrivilegeEscalation: false
@@ -589,7 +589,7 @@ recommendedPolicies:
   hostNamespacePolicy:
     module:
       repository: "kubewarden/policies/host-namespaces-psp"
-      tag: v1.1.12
+      tag: v1.1.13
     name: "no-host-namespace-sharing"
     settings:
       allow_host_ipc: false
@@ -623,7 +623,7 @@ recommendedPolicies:
   hostPathsPolicy:
     module:
       repository: "kubewarden/policies/hostpaths-psp"
-      tag: v1.1.11
+      tag: v1.1.12
     name: "do-not-share-host-paths"
     settings:
       allowedHostPaths:
@@ -633,7 +633,7 @@ recommendedPolicies:
   capabilitiesPolicy:
     module:
       repository: "kubewarden/policies/capabilities-psp"
-      tag: v1.0.14
+      tag: v1.0.15
     name: "drop-capabilities"
     settings:
       allowed_capabilities: []
