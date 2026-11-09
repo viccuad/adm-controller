@@ -56,14 +56,14 @@ annotations:
     - name: policy-server
       image: ghcr.io/kubewarden/adm-controller/policy-server:v1.39.0-rc.3
     - name: kuberlr-kubectl
-      image: ghcr.io/rancher/kuberlr-kubectl:v9.0.1
+      image: ghcr.io/rancher/kuberlr-kubectl:v9.0.2
     - name: policy-reporter
       image: ghcr.io/kyverno/policy-reporter:3.11.2
     - name: policy-reporter-ui
       image: ghcr.io/kyverno/policy-reporter-ui:2.9.1
 dependencies:
   - name: openreports
-    version: 0.2.0
+    version: 0.2.1
     repository: https://openreports.github.io/reports-api
     condition: installOpenReportsCRDs
   - name: policy-reporter
