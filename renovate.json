@@ -195,5 +195,10 @@
         "## Update Checklist\n- [ ] I have checked that the admission-controller values `recommendedPolicies.*.settings` are up to date\n- [ ] I have updated charts/admission-controller/questions.yaml from those of the policies"
       ]
     }
+  ],
+  "schedule": [],
+  "dependencyDashboard": false,
+  "includePaths": [
+    "charts/**"
   ]
 }
