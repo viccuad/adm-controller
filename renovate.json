@@ -208,5 +208,10 @@
       ],
       "minimumReleaseAge": "0 days"
     }
+  ],
+  "schedule": [],
+  "dependencyDashboard": false,
+  "includePaths": [
+    "charts/**"
   ]
 }

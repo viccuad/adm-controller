@@ -34,7 +34,7 @@ metadata:
 spec:
   images:
     - name: ghcr.io/kubewarden/policies/allow-privilege-escalation-psp:v1.0.15
-    - name: ghcr.io/kubewarden/policies/capabilities-psp:v1.0.15
+    - name: ghcr.io/kubewarden/policies/capabilities-psp:v1.0.14
     - name: ghcr.io/kubewarden/policies/host-namespaces-psp:v1.1.13
     - name: ghcr.io/kubewarden/policies/hostpaths-psp:v1.1.12
     - name: ghcr.io/kubewarden/policies/pod-privileged:v1.0.14
@@ -51,7 +51,7 @@ spec:
   images:
     - name: ghcr.io/kyverno/policy-reporter-ui:2.9.1
     - name: ghcr.io/kyverno/policy-reporter:3.11.2
-    - name: ghcr.io/rancher/kuberlr-kubectl:v9.0.2
+    - name: ghcr.io/rancher/kuberlr-kubectl:v9.0.1
 ---
 apiVersion: content.hauler.cattle.io/v1
 kind: Charts
@@ -66,5 +66,5 @@ spec:
       version: 3.11.2
       repoURL: https://kyverno.github.io/policy-reporter
     - name: openreports
-      version: 0.2.1
+      version: 0.2.0
       repoURL: https://openreports.github.io/reports-api
